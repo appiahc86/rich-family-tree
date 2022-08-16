@@ -1,0 +1,18 @@
+:root {
+  font-size: 0.9rem;
+}
+
+.nav-link, .dropdown-toggle{
+  color: white;
+}
+
+.nav-link:hover{
+  color: #ccc;
+}
+
+.cover-img-container{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),url('public/img/cover.jpg');
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  background-size: cover;
+}
