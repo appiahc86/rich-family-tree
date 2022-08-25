@@ -17,10 +17,11 @@ watch(() => route.name, () => {
 
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark p-0" id="mainNav">
       <div class="container-fluid">
         <a class="navbar-brand" style="cursor: pointer;" @click="goHome">
-          <img src="src/assets/vue.svg" class="logo"  alt="..." />
+          <img src="../public/logo.png" class="logo" height="50" width="200"/>
+<!--          RICHFAMILY<span class="text-warning">-TREE</span>-->
         </a>
         <a class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -36,17 +37,16 @@ watch(() => route.name, () => {
                 services
               </div>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">air condition installation</a></li>
-                <li><a class="dropdown-item" href="#">laptops & computers</a></li>
-                <li><a class="dropdown-item" href="#">decoder/antena installation</a></li>
-                <li><a class="dropdown-item" href="#">fire alarm system</a></li>
-                <li><a class="dropdown-item" href="#">cctv camera</a></li>
+                <li><router-link :to="{name: 'air-condition'}" class="dropdown-item">air condition installation</router-link></li>
+                <li><router-link :to="{name: 'laptops-and-computers'}" class="dropdown-item">laptops & computers</router-link></li>
+                <li><router-link :to="{name: 'decoder-antenna'}" class="dropdown-item">decoder/antenna installation</router-link></li>
+                <li><router-link :to="{name: 'fire-alarm-system'}" class="dropdown-item">fire alarm system</router-link></li>
+                <li><router-link :to="{name: 'cctv-cameras'}" class="dropdown-item">cctv camera</router-link></li>
                 <li><a class="dropdown-item" href="#">audio/video doorbell</a></li>
                 <li><a class="dropdown-item" href="#">access control</a></li>
                 <li><a class="dropdown-item" href="#">computer networking</a></li>
                 <li><a class="dropdown-item" href="#">hardware & software</a></li>
-                <li><a class="dropdown-item" href="#">3d signboards</a></li>
-                <li><a class="dropdown-item" href="#">led signboard</a></li>
+                <li><router-link :to="{name: 'led-3d-billboard'}" class="dropdown-item">led/3d signboards</router-link></li>
                 <li><a class="dropdown-item" href="#">electric fence</a></li>
               </ul>
             </li>
@@ -68,7 +68,7 @@ watch(() => route.name, () => {
     <footer class="footer py-4 mt-5">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-4 text-lg-start text-center">
+          <div class="col-lg-5 text-lg-start text-center">
             Copyright &copy;
             <span style="font-weight: bold;">RICHFAMILY TREE ENTERPRISE</span>
             2022
@@ -77,7 +77,7 @@ watch(() => route.name, () => {
           <div class="col-lg-4 my-3 my-lg-0 text-center">
             <a class="btn btn-dark btn-social mx-2" href="tel:+233249550469"><i class="fas fa-phone"></i></a>
             <a class="btn btn-success btn-social mx-2" href="https://api.whatsapp.com/send?phone=233249550469"><i class="fab fa-whatsapp"></i></a>
-            <a class="btn btn-primary btn-social mx-2" href="https://web.facebook.com/Modern-Tiles-Gh-Ltd-107072184972560"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-primary btn-social mx-2" href="https://web.facebook.com"><i class="fab fa-facebook-f"></i></a>
           </div>
 
         </div>

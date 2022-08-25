@@ -6,7 +6,7 @@ onMounted(() => {
 
   const myCarouselElement = document.querySelector('#carouselExampleControls')
   const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 4000,
+    interval: 5000,
     wrap: true
   })
   carousel.cycle();
@@ -24,7 +24,7 @@ onMounted(() => {
           <div class="carousel-item active">
             <div class="text-center">
               <h1 class="text-white">LET'S BUILD <br>YOUR DREAM WITH US</h1>
-              <p class="text-white">Massa sit amet ullamcorper fringilla tortor consec adipis elit sedsmod.</p>
+              <p class="text-white" style="word-spacing: 0.2em;">Best performance over the years.</p>
               <button class="btn btn-sm btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
               <button class="btn btn-sm btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
             </div>
@@ -33,7 +33,7 @@ onMounted(() => {
           <div class="carousel-item">
             <div class="text-center">
             <h1 class="text-white">WE ARE TEAM OF THE <br> PROFESSIONALS</h1>
-            <p class="text-white">Massa sit amet ullamcorper fringilla tortor consec adipis elit sedsmod.</p>
+            <p class="text-white" style="word-spacing: 0.2em;">We do big things with great ideas.</p>
               <button class="btn btn-sm btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
               <button class="btn btn-sm btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
             </div>
@@ -42,7 +42,7 @@ onMounted(() => {
           <div class="carousel-item">
             <div class="text-center">
               <h1 class="text-white"> HIGHEST STANDARDS <br>  OF CONDUCT</h1>
-              <p class="text-white">Massa sit amet ullamcorper fringilla tortor consec adipis elit sedsmod.</p>
+              <p class="text-white">Committed to superior quality and results.</p>
               <button class="btn btn-sm btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
               <button class="btn btn-sm btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
             </div>
@@ -64,42 +64,96 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="text-center p-5">
-      <h3 class="fw-bold">OUR<span class="text-warning"> SERVICES</span></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, temporibus ullam.
-         <br>doloremque harum id porro totam voluptates? Blanditiis</p>
+    <div class="text-center px-5 py-4">
+      <h3 class="fw-bold display-5">OUR<span class="text-warning"> SERVICES</span></h3>
+      <p class="text-muted font">Our experience and commitment to cutting edge technology allows us to assist our clients in
+        <br class="d-none d-md-block">bringing their ideas and projects from concept to reality</p>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid container-lg p-4">
 
-      <div class="row mt-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow">
-            <div class="card-img-top"><img src="public/img/1.jpeg" alt="" class="img-fluid w-100"></div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi cupiditate debitis delectus
-                deleniti deserunt, esse molestiae natus non quaerat, quas similique tenetur vel.
-                Accusamus et fuga inventore ipsa repudiandae.</p>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow mb-4">
+            <div class="card-img-top"><img src="/public/img/decoder1.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-body text-center">
+              <h6 class="text-uppercase fw-bold">decoder/antenna installation</h6>
+              <p>
+                Receive improved sound and picture <br class="d-none d-md-block"> quality
+              </p>
+              <a class="text-decoration-none" href="#">
+                <h6 class="text-warning fw-bold">READ MORE</h6>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow">
-            <div class="card-img-top"><img src="public/img/2.jpeg" alt="" class="img-fluid w-100"></div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi cupiditate debitis delectus
-                deleniti deserunt, esse molestiae natus non quaerat, quas similique tenetur vel.
-                Accusamus et fuga inventore ipsa repudiandae.</p>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow mb-4">
+            <div class="card-img-top"><img src="/public/img/2.jpeg" alt="" class="img-fluid w-100"></div>
+            <div class="card-body text-center">
+              <h6 class="text-uppercase fw-bold">electric fence</h6>
+              <p>
+                Excellent security deterrent to burglary <br class="d-none d-md-block">  and trespassing
+              </p>
+              <a class="text-decoration-none" href="#">
+                <h6 class="text-warning fw-bold">READ MORE</h6>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow">
-            <div class="card-img-top"><img src="public/img/3.jpeg" alt="" class="img-fluid w-100"></div>
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi cupiditate debitis delectus
-                deleniti deserunt, esse molestiae natus non quaerat, quas similique tenetur vel.
-                Accusamus et fuga inventore ipsa repudiandae.</p>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow mb-4">
+            <div class="card-img-top"><img src="/public/img/cctv.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-body text-center">
+              <h6 class="text-uppercase fw-bold">cctv cameras</h6>
+              <p>
+                Add a layer of security to your home <br class="d-none d-md-block"> or office
+              </p>
+              <a class="text-decoration-none" href="#">
+                <h6 class="text-warning fw-bold">READ MORE</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow mb-4">
+            <div class="card-img-top"><img src="/public/img/laptop.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-body text-center">
+              <h6 class="text-uppercase fw-bold">laptops & computers</h6>
+              <p>
+                We have variety of laptops and accessories <br class="d-none d-md-block"> at sale
+              </p>
+              <a class="text-decoration-none" href="#">
+                <h6 class="text-warning fw-bold">READ MORE</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow mb-4">
+            <div class="card-img-top"><img src="/public/img/led.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-body text-center">
+              <h6 class="text-uppercase fw-bold">led/3d signboards</h6>
+              <p>
+                Show your audience dynamic advertisement with<br class="d-none d-md-block"> high attention
+              </p>
+              <a class="text-decoration-none" href="#">
+                <h6 class="text-warning fw-bold">READ MORE</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow mb-4">
+            <div class="card-img-top"><img src="/public/img/fire_alarm.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-body text-center">
+              <h6 class="text-uppercase fw-bold">fire alarm system</h6>
+              <p>
+                Warn people when fire or smoke is<br class="d-none d-md-block"> detected
+              </p>
+              <a class="text-decoration-none" href="#">
+                <h6 class="text-warning fw-bold">READ MORE</h6>
+              </a>
             </div>
           </div>
         </div>
