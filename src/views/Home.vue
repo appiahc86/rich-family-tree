@@ -25,8 +25,8 @@ onMounted(() => {
             <div class="text-center">
               <h1 class="text-white">LET'S BUILD <br>YOUR DREAM WITH US</h1>
               <p class="text-white" style="word-spacing: 0.2em;">Best performance over the years.</p>
-              <button class="btn btn-sm btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
-              <button class="btn btn-sm btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
+              <button class="btn btn-sm btn-warning sm-btn px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
+              <button class="btn btn-sm btn-light sm-btn px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
             </div>
           </div>
 
@@ -34,8 +34,8 @@ onMounted(() => {
             <div class="text-center">
             <h1 class="text-white">WE ARE TEAM OF THE <br> PROFESSIONALS</h1>
             <p class="text-white" style="word-spacing: 0.2em;">We do big things with great ideas.</p>
-              <button class="btn btn-sm btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
-              <button class="btn btn-sm btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
+              <button class="btn btn-sm sm-btn btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
+              <button class="btn btn-sm sm-btn btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
             </div>
           </div>
 
@@ -43,8 +43,8 @@ onMounted(() => {
             <div class="text-center">
               <h1 class="text-white"> HIGHEST STANDARDS <br>  OF CONDUCT</h1>
               <p class="text-white">Committed to superior quality and results.</p>
-              <button class="btn btn-sm btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
-              <button class="btn btn-sm btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
+              <button class="btn btn-sm sm-btn btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
+              <button class="btn btn-sm sm-btn btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
             </div>
           </div>
 
@@ -75,7 +75,7 @@ onMounted(() => {
       <div class="row">
         <div class="col-sm-6 col-lg-4">
           <div class="card shadow mb-4">
-            <div class="card-img-top"><img src="/public/img/decoder1.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-img-top"><img src="/img/decoder1.jpg" alt="" class="img-fluid w-100"></div>
             <div class="card-body text-center">
               <h6 class="text-uppercase fw-bold">decoder/antenna installation</h6>
               <p>
@@ -89,21 +89,21 @@ onMounted(() => {
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="card shadow mb-4">
-            <div class="card-img-top"><img src="/public/img/2.jpeg" alt="" class="img-fluid w-100"></div>
+            <div class="card-img-top"><img src="/img/2.jpeg" alt="" class="img-fluid w-100"></div>
             <div class="card-body text-center">
               <h6 class="text-uppercase fw-bold">electric fence</h6>
               <p>
                 Excellent security deterrent to burglary <br class="d-none d-md-block">  and trespassing
               </p>
-              <a class="text-decoration-none" href="#">
+              <router-link :to="{name: 'electric-fence'}" class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="card shadow mb-4">
-            <div class="card-img-top"><img src="/public/img/cctv.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-img-top"><img src="/img/cctv.jpg" alt="" class="img-fluid w-100"></div>
             <div class="card-body text-center">
               <h6 class="text-uppercase fw-bold">cctv cameras</h6>
               <p>
@@ -117,7 +117,7 @@ onMounted(() => {
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="card shadow mb-4">
-            <div class="card-img-top"><img src="/public/img/laptop.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-img-top"><img src="/img/laptop.jpg" alt="" class="img-fluid w-100"></div>
             <div class="card-body text-center">
               <h6 class="text-uppercase fw-bold">laptops & computers</h6>
               <p>
@@ -131,21 +131,21 @@ onMounted(() => {
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="card shadow mb-4">
-            <div class="card-img-top"><img src="/public/img/led.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-img-top"><img src="/img/led.jpg" alt="" class="img-fluid w-100"></div>
             <div class="card-body text-center">
               <h6 class="text-uppercase fw-bold">led/3d signboards</h6>
               <p>
                 Show your audience dynamic advertisement with<br class="d-none d-md-block"> high attention
               </p>
-              <a class="text-decoration-none" href="#">
+              <router-link :to="{name: 'led-3d-billboard'}" class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="card shadow mb-4">
-            <div class="card-img-top"><img src="/public/img/fire_alarm.jpg" alt="" class="img-fluid w-100"></div>
+            <div class="card-img-top"><img src="/img/fire_alarm.jpg" alt="" class="img-fluid w-100"></div>
             <div class="card-body text-center">
               <h6 class="text-uppercase fw-bold">fire alarm system</h6>
               <p>
@@ -165,7 +165,13 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+
+@media screen and (max-width: 300px) {
+  .sm-btn{
+    width: 47% !important;
+    font-size: 0.8em;
+    padding: 4px !important;
+  }
 }
+
 </style>

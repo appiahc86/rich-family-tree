@@ -20,15 +20,14 @@ watch(() => route.name, () => {
     <nav class="navbar navbar-expand-lg fixed-top bg-dark p-0" id="mainNav">
       <div class="container-fluid">
         <a class="navbar-brand" style="cursor: pointer;" @click="goHome">
-          <img src="../public/logo.png" class="logo" height="50" width="200"/>
-<!--          RICHFAMILY<span class="text-warning">-TREE</span>-->
+          <img src="/logo.png" class="logo" height="50" width="200" alt="logo"/>
         </a>
         <a class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-ellipsis-h ms-1"></i>
         </a>
-        <div class="collapse navbar-collapse" id="navbarResponsive" ref="navbarCollapse">
+        <div class="collapse navbar-collapse text-white" id="navbarResponsive" ref="navbarCollapse">
           <ul class="navbar-nav text-uppercase ms-auto py-lg-0 fw-bold">
             <li class="nav-item"><router-link :to="{name: 'home'}" class="nav-link ">home</router-link></li>
 
@@ -41,13 +40,13 @@ watch(() => route.name, () => {
                 <li><router-link :to="{name: 'laptops-and-computers'}" class="dropdown-item">laptops & computers</router-link></li>
                 <li><router-link :to="{name: 'decoder-antenna'}" class="dropdown-item">decoder/antenna installation</router-link></li>
                 <li><router-link :to="{name: 'fire-alarm-system'}" class="dropdown-item">fire alarm system</router-link></li>
-                <li><router-link :to="{name: 'cctv-cameras'}" class="dropdown-item">cctv camera</router-link></li>
+                <li><router-link :to="{name: 'cctv-cameras'}" class="dropdown-item">cctv cameras</router-link></li>
                 <li><a class="dropdown-item" href="#">audio/video doorbell</a></li>
                 <li><a class="dropdown-item" href="#">access control</a></li>
                 <li><a class="dropdown-item" href="#">computer networking</a></li>
                 <li><a class="dropdown-item" href="#">hardware & software</a></li>
                 <li><router-link :to="{name: 'led-3d-billboard'}" class="dropdown-item">led/3d signboards</router-link></li>
-                <li><a class="dropdown-item" href="#">electric fence</a></li>
+                <li><router-link :to="{name: 'electric-fence'}" class="dropdown-item">electric fence</router-link></li>
               </ul>
             </li>
 
@@ -62,6 +61,44 @@ watch(() => route.name, () => {
     <main class="mt-2">
       <router-view></router-view>
     </main>
+
+      <!--   Services List  -->
+    <div class="bg-dark mt-4 p-5">
+
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center text-white my-3">SERVICES LIST</h3>
+        <div class="col-md-4 text-white">
+          <ul class="text-capitalize">
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> air condition installation</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> laptops & computers</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> decoder/antenna installation</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> fire alarm system</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> led/3d signboards</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 text-white">
+          <ul class="text-capitalize">
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> cctv camera</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> audio/video doorbell</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> access control</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> computer networking</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> hardware & software</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 text-white">
+          <ul class="text-capitalize">
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> electric fence</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> graphic designing</li>
+            <li class="list-unstyled"><span class="fas fa-arrow-alt-circle-right"></span> general printing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
     <!-- Footer-->
@@ -92,5 +129,5 @@ watch(() => route.name, () => {
 .router-link-exact-active{
   color: goldenrod;
 }
+
 </style>
-S

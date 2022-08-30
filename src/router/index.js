@@ -9,6 +9,7 @@ import DecoderView from '../views/services/DecoderView.vue';
 import FireAlarmView from '../views/services/FireAlarmView.vue';
 import CCTVView from '../views/services/CCTVView.vue';
 import LedView from '../views/services/LedView.vue';
+import ElectricFenceView from '../views/services/ElectricFenceView.vue';
 
 
 const routes = [
@@ -60,14 +61,29 @@ const routes = [
         name: 'led-3d-billboard',
         component: LedView,
     },
-
+    {
+        path: '/services/electric-fence',
+        name: 'electric-fence',
+        component: ElectricFenceView,
+    },
 
 
 ]
+
+
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior (to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition;
+        } else {
+            return { top: 0 }
+        }
+    }
+
 })
+
 
 
 export default router;
