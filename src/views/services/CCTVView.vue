@@ -10,7 +10,7 @@
       <div class="container-fluid container-xl">
         <div class="row">
           <div class="col-md-6 text-white pt-5 text-center text-md-start">
-            <h1 class="pt-5 display-5 fw-bold">Installation of CCTV</h1>
+            <h1 class="pt-md-5 display-5 fw-bold">Installation of CCTV</h1>
             <p class="pt-3 fw-bol fs-6 text">
               We will select the optimum solution for all your problems. With us <br class="d-none">
               you will always feel safe. Cameras apartments have stylish design and <br class="d-none">
@@ -34,29 +34,33 @@
 
     <div class="container-fluid container-md my-5">
       <div class="row">
-        <h2>MONITOR YOUR HOME AND BUSINESS</h2>
+        <h2 class="text-danger text-center">SECURE YOUR HOME AND BUSINESS</h2>
+        <p class="text-center">
+          Protect your home/business from unnecessary damage from both inside and outside factors;
+          inside being employee theft and external ranging from burglary, thieves or irritant neighbors. More
+          than 33% of all business goes bankrupt due to employee theft and the rest incur huge losses.
+        </p>
         <div class="col">
           <img src="/img/cameras/cover.jpg" alt="" class="img-fluid w-100">
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mt-5">
         <h2 class="text-center text-danger">WHOLESALE AND RETAIL</h2>
         <p class="text-center fs-5">
-          We also have all types of cctv and accessories
+          We also have all types of cctv cameras and accessories
         </p>
         <div class="col-md-4 col-lg-4">
-          <img src="/img/cameras/dome.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
+          <img src="/img/cameras/grp2.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
         </div>
         <div class="col-md-4 col-lg-4">
-          <img src="/img/cameras/grp.png" alt="" class="img-fluid w-100 p-4 p-lg-0">
+          <img src="/img/cameras/grp.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
         </div>
         <div class="col-md-4 col-lg-4">
-          <img src="/img/cameras/bullet.png" alt="" class="img-fluid w-100 p-4 p-lg-0">
+          <img src="/img/cameras/grp3.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
         </div>
       </div>
     </div>
-
 
   </div>
 </template>
@@ -73,7 +77,7 @@
 }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 365px) {
   .sm-btn{
     width: 40% !important;
     font-size: 0.8em;

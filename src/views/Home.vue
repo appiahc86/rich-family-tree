@@ -81,9 +81,9 @@ onMounted(() => {
               <p>
                 Receive improved sound and picture <br class="d-none d-md-block"> quality
               </p>
-              <a class="text-decoration-none" href="#">
+              <router-link :to="{name: 'decoder-antenna'}" class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -109,9 +109,9 @@ onMounted(() => {
               <p>
                 Add a layer of security to your home <br class="d-none d-md-block"> or office
               </p>
-              <a class="text-decoration-none" href="#">
+              <router-link :to="{name: 'cctv-cameras'}" class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ onMounted(() => {
               <p>
                 We have variety of laptops and accessories <br class="d-none d-md-block"> at sale
               </p>
-              <a class="text-decoration-none" href="#">
+              <a class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
               </a>
             </div>
@@ -151,7 +151,7 @@ onMounted(() => {
               <p>
                 Warn people when fire or smoke is<br class="d-none d-md-block"> detected
               </p>
-              <a class="text-decoration-none" href="#">
+              <a class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
               </a>
             </div>
