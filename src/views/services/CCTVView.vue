@@ -10,10 +10,10 @@
       <div class="container-fluid container-xl">
         <div class="row">
           <div class="col-md-6 text-white pt-5 text-center text-md-start">
-            <h1 class="pt-md-5 display-5 fw-bold">Installation of CCTV</h1>
+            <h1 class="pt-md-5 display-5 fw-bold">Installation of CCTV Cameras</h1>
             <p class="pt-3 fw-bol fs-6 text">
               We will select the optimum solution for all your problems. With us <br class="d-none">
-              you will always feel safe. Cameras apartments have stylish design and <br class="d-none">
+              you will always feel safe. We have high quality cameras with stylish design and <br class="d-none">
               can be installed in each room where you want to observe.
             </p>
             <a class="btn btn-lg fw-bold btn-success sm-btn" href="https://api.whatsapp.com/send?phone=233249550469">
@@ -67,8 +67,9 @@
 
 <style scoped>
 .cover{
-  background: linear-gradient(rgba(0,0,0,0.7), rgb(0,0,0,0.7)), url("/img/cameras/house.jpg");
+  background: linear-gradient(rgba(0,0,0,0.4), rgb(0,0,0,0.4)), url("/img/cameras/house.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1000px) {
@@ -77,11 +78,14 @@
 }
 }
 
+
 @media screen and (max-width: 365px) {
   .sm-btn{
     width: 40% !important;
     font-size: 0.8em;
-    padding: 5px !important;
+    padding: 10px 0 !important;
   }
+
 }
+
 </style>

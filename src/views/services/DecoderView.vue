@@ -15,6 +15,7 @@ onMounted(() => {
 
 <template>
   <div class="mt-3">
+    <!-- carousel -->
     <div id="decoderCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
 
@@ -23,12 +24,14 @@ onMounted(() => {
             <div class="container-fluid container-md">
               <div class="row justify-content-center justify-content-lg-start">
                 <div class="col-md-8">
-                  <h1 class="display-3">WE PROVIDE ULTIMATE TV ANTENNA INSTALLATION.</h1>
+                  <h1 class="display-3 fw-bold">WE PROVIDE ULTIMATE TV ANTENNA INSTALLATION.</h1>
                   <p class="fs-6" style="letter-spacing: 0.2em;">
-                    Our team is proficient in an array of services that can help elevate and empower your
-                    company or organization. We work with you to build comprehensive, thoughtful,
-                    and purpose-driven identities and experiences.
+                    Transform your living room to theater.
+                    Watch your favorite movies or tv shows in high definition from
+                    the comfort of your home or office.
+                    Tv entertainment will no longer be the same for you.
                   </p>
+                  <a class="btn btn-lg btn-outline-light fw-bold" href="tel:+233249550469">Give us a call</a>
                 </div>
               </div>
             </div>
@@ -40,12 +43,14 @@ onMounted(() => {
             <div class="container-fluid container-md">
               <div class="row justify-content-center justify-content-lg-end">
                 <div class="col-md-8">
-                  <h1 class="display-3">WE PROVIDE ULTIMATE TV ANTENNA INSTALLATION.</h1>
+                  <h1 class="display-3 fw-bold">WE PROVIDE ULTIMATE TV ANTENNA INSTALLATION.</h1>
                   <p class="fs-6" style="letter-spacing: 0.2em;">
-                    Our team is proficient in an array of services that can help elevate and empower your
-                    company or organization. We work with you to build comprehensive, thoughtful,
-                    and purpose-driven identities and experiences.
+                    Transform your living room to theater.
+                    Watch your favorite movies or tv shows in high definition from
+                    the comfort of your home or office.
+                    Tv entertainment will no longer be the same for you.
                   </p>
+                  <a class="btn btn-lg btn-light fw-bold" href="tel:+233249550469">Give us a call</a>
                 </div>
               </div>
             </div>
@@ -66,19 +71,40 @@ onMounted(() => {
       </div>
 
     </div>
+
+
+    <!-- images container -->
+    <div class="container-fluid container-md my-5">
+
+      <div class="row mt-5">
+        <h2 class="text-center text-danger">WHOLESALE AND RETAIL</h2>
+        <p class="text-center fs-5">
+          We also have all types of antennas, decoders and accessories
+        </p>
+        <div class="col-md-4 col-lg-4">
+          <img src="/img/decoder/img1.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <img src="/img/decoder/img2.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <img src="/img/decoder/img3.jpg" alt="" class="img-fluid w-100 p-4 p-lg-0">
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </template>
 
 <style scoped>
 .cover1{
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("/img/decoder/1.jpg");
-  /*background-size: 100%;*/
   background-size: cover;
   background-position: center;
 }
 .cover2{
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)),url("/img/decoder/2.jpg");
-  /*background-size: cover;*/
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url("/img/decoder/2.jpg");
   background-position: center;
   background-size: cover;
 }

@@ -3,13 +3,12 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
 //services
-import AirConditionView from '../views/services/AirConditionView.vue';
-import LaptopsView from '../views/services/LaptopsView.vue';
 import DecoderView from '../views/services/DecoderView.vue';
 import FireAlarmView from '../views/services/FireAlarmView.vue';
 import CCTVView from '../views/services/CCTVView.vue';
 import LedView from '../views/services/LedView.vue';
 import ElectricFenceView from '../views/services/ElectricFenceView.vue';
+import LaptopsAndComputersView from '../views/services/LaptopsAndComputersView.vue';
 
 
 const routes = [
@@ -31,15 +30,11 @@ const routes = [
     },
 
     //....................services.........................
-    {
-        path: '/services/air-condition',
-        name: 'air-condition',
-        component: AirConditionView,
-    },
+
     {
         path: '/services/laptops-and-computers',
         name: 'laptops-and-computers',
-        component: LaptopsView,
+        component: LaptopsAndComputersView,
     },
     {
         path: '/services/decoder-antenna',
@@ -67,7 +62,11 @@ const routes = [
         component: ElectricFenceView,
     },
 
-
+//    redirect to home page if route not found
+    {
+        path: '/:catchAll(.*)*',
+        redirect: {name: 'home'}
+    }
 ]
 
 
@@ -83,7 +82,6 @@ const router = createRouter({
     }
 
 })
-
 
 
 export default router;

@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="">
+  <div>
 
     <div class="p-5 cover-img-container">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -25,8 +25,12 @@ onMounted(() => {
             <div class="text-center">
               <h1 class="text-white">LET'S BUILD <br>YOUR DREAM WITH US</h1>
               <p class="text-white" style="word-spacing: 0.2em;">Best performance over the years.</p>
-              <button class="btn btn-sm btn-warning sm-btn px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
-              <button class="btn btn-sm btn-light sm-btn px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
+              <router-link :to="{name: 'about'}" class="btn btn-sm btn-warning sm-btn px-3 py-2 py-md-3 px-md-5 fw-bold">
+                LEARN MORE
+              </router-link>
+              <router-link :to="{name: 'contact'}" class="btn btn-sm btn-light sm-btn px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">
+                CONTACT US
+              </router-link>
             </div>
           </div>
 
@@ -34,8 +38,12 @@ onMounted(() => {
             <div class="text-center">
             <h1 class="text-white">WE ARE TEAM OF THE <br> PROFESSIONALS</h1>
             <p class="text-white" style="word-spacing: 0.2em;">We do big things with great ideas.</p>
-              <button class="btn btn-sm sm-btn btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
-              <button class="btn btn-sm sm-btn btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
+              <router-link :to="{name: 'about'}" class="btn btn-sm btn-warning sm-btn px-3 py-2 py-md-3 px-md-5 fw-bold">
+                LEARN MORE
+              </router-link>
+              <router-link :to="{name: 'contact'}" class="btn btn-sm btn-light sm-btn px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">
+                CONTACT US
+              </router-link>
             </div>
           </div>
 
@@ -43,8 +51,12 @@ onMounted(() => {
             <div class="text-center">
               <h1 class="text-white"> HIGHEST STANDARDS <br>  OF CONDUCT</h1>
               <p class="text-white">Committed to superior quality and results.</p>
-              <button class="btn btn-sm sm-btn btn-warning px-3 py-2 py-md-3 px-md-5 fw-bold">LEARN MORE</button>
-              <button class="btn btn-sm sm-btn btn-light px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">CONTACT US</button>
+              <router-link :to="{name: 'about'}" class="btn btn-sm btn-warning sm-btn px-3 py-2 py-md-3 px-md-5 fw-bold">
+                LEARN MORE
+              </router-link>
+              <router-link :to="{name: 'contact'}" class="btn btn-sm btn-light sm-btn px-3 py-2 py-md-3 px-md-5 ms-2 ms-md-5 fw-bold">
+                CONTACT US
+              </router-link>
             </div>
           </div>
 
@@ -123,9 +135,9 @@ onMounted(() => {
               <p>
                 We have variety of laptops and accessories <br class="d-none d-md-block"> at sale
               </p>
-              <a class="text-decoration-none">
+              <router-link :to="{name: 'laptops-and-computers'}" class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -151,9 +163,9 @@ onMounted(() => {
               <p>
                 Warn people when fire or smoke is<br class="d-none d-md-block"> detected
               </p>
-              <a class="text-decoration-none">
+              <router-link :to="{name: 'fire-alarm-system'}" class="text-decoration-none">
                 <h6 class="text-warning fw-bold">READ MORE</h6>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
